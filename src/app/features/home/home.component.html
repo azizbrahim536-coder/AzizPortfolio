@@ -1,0 +1,375 @@
+<div class="portfolio-page">
+
+  <header class="navbar">
+
+    <a
+      href="#hero"
+      class="logo"
+    >
+      <span>MA</span>
+      Aziz Brahim
+    </a>
+
+    <nav>
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#skills">
+        Skills
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <section
+      id="hero"
+      class="hero section"
+    >
+
+      <div class="hero-content">
+
+        <span class="eyebrow">
+          Full Stack Developer
+        </span>
+
+        <h1>
+          Hi, I’m
+          <span>
+            Mohamed Aziz Brahim
+          </span>
+        </h1>
+
+        <p>
+          I build modern web applications using Angular,
+          Spring Boot, MySQL and AI integrations.
+          My projects focus on clean interfaces,
+          useful features and real-world workflows.
+        </p>
+
+
+        <div class="hero-actions">
+
+          <button
+            type="button"
+            (click)="scrollToSection('projects')"
+          >
+            View Projects
+          </button>
+
+          <a
+            href="https://github.com/azizbrahim536-coder"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="secondary-link"
+          >
+            GitHub
+          </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+          <div>
+            <strong>
+              6+
+            </strong>
+
+            <span>
+              Projects
+            </span>
+          </div>
+
+          <div>
+            <strong>
+              Full Stack
+            </strong>
+
+            <span>
+              Angular + Spring Boot
+            </span>
+          </div>
+
+          <div>
+            <strong>
+              AI
+            </strong>
+
+            <span>
+              Gemini Integration
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-card">
+
+        <div class="profile-avatar">
+          MA
+        </div>
+
+        <h2>
+          Junior Full Stack Developer
+        </h2>
+
+        <p>
+          Angular • Spring Boot • MySQL • Flask • Gemini
+        </p>
+
+        <div class="status-badge">
+          Available for opportunities
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section
+      id="about"
+      class="about section"
+    >
+
+      <div class="section-heading">
+
+        <span>
+          About me
+        </span>
+
+        <h2>
+          Passionate about building useful web apps
+        </h2>
+
+      </div>
+
+      <p>
+        I am a junior full-stack developer focused on
+        building practical applications with Angular,
+        Spring Boot and MySQL. I have also worked on
+        AI-powered features using Flask and Gemini API.
+        My goal is to create clean, responsive and helpful
+        software that solves real problems.
+      </p>
+
+    </section>
+
+
+    <section
+      id="skills"
+      class="skills section"
+    >
+
+      <div class="section-heading">
+
+        <span>
+          Skills
+        </span>
+
+        <h2>
+          Technologies I use
+        </h2>
+
+      </div>
+
+
+      <div class="skills-grid">
+
+        <article
+          *ngFor="let skill of skills"
+          class="skill-card"
+        >
+
+          <h3>
+            {{ skill.title }}
+          </h3>
+
+          <div class="skill-tags">
+
+            <span
+              *ngFor="
+                let item of skill.items
+              "
+            >
+              {{ item }}
+            </span>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section
+      id="projects"
+      class="projects section"
+    >
+
+      <div class="section-heading">
+
+        <span>
+          Projects
+        </span>
+
+        <h2>
+          Selected work
+        </h2>
+
+        <p>
+          Here are the main projects I built during my
+          learning path and portfolio preparation.
+        </p>
+
+      </div>
+
+
+      <div class="projects-grid">
+
+        <article
+          *ngFor="let project of projects"
+          class="project-card"
+          [class.featured]="project.featured"
+        >
+
+          <div class="project-image">
+
+            <img
+              [src]="project.image"
+              [alt]="project.name"
+            >
+
+          </div>
+
+          <div class="project-content">
+
+            <span class="project-category">
+              {{ project.category }}
+            </span>
+
+            <h3>
+              {{ project.name }}
+            </h3>
+
+            <p>
+              {{ project.description }}
+            </p>
+
+
+            <div class="tech-list">
+
+              <span
+                *ngFor="
+                  let tech
+                  of project.technologies
+                "
+              >
+                {{ tech }}
+              </span>
+
+            </div>
+
+
+            <div class="project-actions">
+
+              <a
+                [href]="project.githubUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+
+              <a
+                *ngIf="project.liveUrl"
+                [href]="project.liveUrl"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="live"
+              >
+                Live Demo
+              </a>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <section
+      id="contact"
+      class="contact section"
+    >
+
+      <div class="contact-card">
+
+        <span>
+          Contact
+        </span>
+
+        <h2>
+          Let’s build something together
+        </h2>
+
+        <p>
+          You can find my work on GitHub or contact me
+          for opportunities, internships or freelance projects.
+        </p>
+
+        <div class="contact-actions">
+
+          <a
+            href="mailto:azizbrahim536@gmail.com"
+          >
+            Email me
+          </a>
+
+          <a
+            href="https://github.com/azizbrahim536-coder"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Profile
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <span>
+      © 2026 Mohamed Aziz Brahim
+    </span>
+
+    <span>
+      Built with Angular
+    </span>
+  </footer>
+
+</div>
