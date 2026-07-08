@@ -54,62 +54,69 @@ export const PROJECTS:
         true
     },
 
-    {
-      name: 'TaskFlowAI',
-      category: 'Kanban Task Manager',
-      description:
-        'Application Kanban pour organiser les tâches avec colonnes, cartes et suivi du workflow.',
-      image:
-        'assets/projects/taskflow-kanban.png',
-      technologies: [
-        'Angular',
-        'TypeScript',
-        'CSS',
-        'LocalStorage'
-      ],
-      githubUrl:
-        'https://github.com/azizbrahim536-coder/TaskFlowAI',
-      featured:
-        true
-    },
+  {
+  name: 'TaskFlowAI',
+  category: 'Full Stack AI Kanban App',
+  description:
+    'Application full-stack de gestion des tâches avec tableau Kanban, backend Spring Boot et service IA pour assister l’organisation du workflow.',
+  image:
+    'assets/projects/taskflow-kanban.png',
+  technologies: [
+    'Angular',
+    'Spring Boot',
+    'MySQL',
+    'Flask',
+    'AI Service',
+    'REST API'
+  ],
+  githubUrl:
+    'https://github.com/azizbrahim536-coder/TaskFlowAI',
+  featured:
+    true
+},
 
-    {
-      name: 'StudyPlanner',
-      category: 'Study Management',
-      description:
-        'Application pour organiser les matières, les séances de révision et le planning d’étude.',
-      image:
-        'assets/projects/studyplanner-home.png',
-      technologies: [
-        'Angular',
-        'TypeScript',
-        'HTML',
-        'CSS'
-      ],
-      githubUrl:
-        'https://github.com/azizbrahim536-coder/StudyPlanner',
-      featured:
-        false
-    },
+  {
+  name: 'StudyPlanner',
+  category: 'Full Stack AI Study Planner',
+  description:
+    'Application full-stack pour organiser les matières, les séances de révision et le planning d’étude avec un backend Spring Boot et un service IA pour générer des plans de révision.',
+  image:
+    'assets/projects/studyplanner-home.png',
+  technologies: [
+    'Angular',
+    'Spring Boot',
+    'MySQL',
+    'Flask',
+    'AI Service',
+    'REST API'
+  ],
+  githubUrl:
+    'https://github.com/azizbrahim536-coder/StudyPlanner',
+  featured:
+    true
+},
 
-    {
-      name: 'NoteApp',
-      category: 'Notes Application',
-      description:
-        'Application simple de prise de notes avec création, édition et suppression de notes.',
-      image:
-        'assets/projects/noteapp-home.png',
-      technologies: [
-        'Angular',
-        'TypeScript',
-        'LocalStorage',
-        'CSS'
-      ],
-      githubUrl:
-        'https://github.com/azizbrahim536-coder/NoteApp',
-      featured:
-        false
-    },
+{
+  name: 'NoteApp',
+  category: 'Full Stack Notes Application',
+  description:
+    'Application full-stack de prise de notes avec création, modification, suppression et organisation des notes, développée avec Angular, Spring Boot et MySQL.',
+  image:
+    'assets/projects/noteapp-home.png',
+  technologies: [
+    'Angular',
+    'Spring Boot',
+    'MySQL',
+    'REST API',
+    'AI Service',
+    'TypeScript',
+    'CSS'
+  ],
+  githubUrl:
+    'https://github.com/azizbrahim536-coder/NoteApp',
+  featured:
+    true
+},
 
     {
       name: 'PrayerTimesApp',
